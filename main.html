@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<!--Welcome to my website's code!-->
+
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <title>Matson Garza</title>
+        <style>
+
+            :root {
+
+                /* Header color */
+                --headercolor: rgb(203, 227, 255);
+                /* Paragraph color */
+                --parcolor: rgb(235, 235, 235);
+            }
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 48pt;
+            }
+
+            h2 {
+                font-size: 28pt;
+                color: var(--headercolor)
+            }
+
+            h3 {
+                font-size: 18pt;
+                color: var(--headercolor);
+            }
+
+            a {
+                color: var(--headercolor);
+            }
+
+            hr {
+                width: 60%
+            }
+
+            body {
+                background-color: rgb(30, 23, 41);
+                font-family: Arial, Helvetica, sans-serif;
+                color: var(--parcolor);
+            }
+
+            footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 10px;
+                color: var(--parcolor);
+            }
+
+            img {
+                border-color: var(--parcolor);
+                border-style: solid;
+            }
+
+            .flex-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 30px;
+            }
+            .flex-div-column {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 30px;
+            }
+
+            .blurb {
+                margin-left: 30px;
+                margin-right: 30px;
+                font-size: 14pt;
+            }
+
+            .emphasis {
+                font-weight: bold;
+                color: var(--headercolor)
+            }
+
+            .contact {
+                margin: 10px;
+                font-size: 14pt;
+                text-align: center;
+            }
+
+            .section-header {
+                text-align: center;
+                margin: 10px;
+            }
+
+            .no-border {
+                border-style: none;
+            }
+
+            #last-bar {
+                margin-top: 25px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Matson Garza</h1>
+            <div class="flex-div">
+                <div class="blurb">
+                    <h3>About Me!</h3>
+                    <p> 
+                        Howdy! I'm Matson (he/him) and I love exoplanets. It's truly amazing <br>
+                        to think that every star in the night likely has worlds of its own. I'm <br>
+                        currently a senior at MIT majoring in Physics (Course 8) and minoring <br>
+                        in Earth, Atmospheric, and Planetary Sciences (EAPS/Course 12). I <br>
+                        ultimately seek to understand our place in the Universe through a <br>
+                        variety of perspectives, from broad demographics to individual system <br>
+                        characterization. To accomplish this and pass on our knowledge to the <br>
+                        next generation, my long-term goal is to become a professor. <br>
+                    </p>
+                    <p>
+                        My past research has focused on the atmospheric modeling of lava <br>
+                        worlds and the direct resolution of binary planets/exomoons below the <br>
+                        diffraction limit—see below for more information! You can also take <br>
+                        a look at my CV <a href="CV.pdf">here</a>. I look forward to expanding my skillset to <br>
+                        address the many outstanding questions in exoplanetology and to <br>
+                        prepare for future projects like the Habitable Worlds Observatory. <br>
+                        In my spare time, I enjoy reading, stargazing, biking, playing <br>
+                        <em>Minecraft</em>, and most recently weaving! 
+                    </p>
+                </div>
+                <img src="matson.jpg" width="300">
+            </div>
+
+            <hr>
+
+            <h2 class="section-header">Research</h2>
+
+            <hr>
+
+            <div class="flex-div">
+                <div class="flex-div-column">
+                    <img src="planck_animation_360.gif" width="150px" height="150px" class="no-border">
+                    <img src="adiabatic_animation_360.gif" width="150px" height="150px" class="no-border">
+                </div>
+                <div class="blurb">
+                    <h3>Research Project: Lava Worlds</h3>
+                    <p> 
+                        I began this project in 2024 with MIT Prof. Wanying Kang. <br>
+                        Lava worlds are tidally-locked planets so close to their stars that dayside <br>
+                        temperatures are high enough to melt rock! It's believed that there are <br>
+                        likely two broad atmosphere classes: rock-vapor (thin; poor heat transport) <br>
+                        and volatile-rich (thick; efficient heat transport). My research focused <br>
+                        on the following question regarding SiO rock-vapor atmospheres: what spectral <br>
+                        features might we expect to be observable with current technology and what <br>
+                        can they tell us about atmospheric structure? <br>
+                    </p>
+                    <p>
+                        On the left, you can see the observed spectral emission flux (at 8 microns) with <br>
+                        and without absorption by the Δv=1 SiO rovibrational band (assuming an adiabatic <br>
+                        atmosphere structure). Simulating the atmosphere ends up being tricky due to the <br>
+                        presence of supersonic flows and strong radiative heating effects due to the <br>
+                        absorption of infrared starlight; as a result, I developed a custom radiative- <br>
+                        transfer and 1D horizontal transport model. Preliminary results suggest that <br>
+                        vertical atmospheric structure plays a dominant role in determining the observed <br>
+                        emission spectra. I am working on finishing this project and writing up my <br>
+                        findings in a first-author paper.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-div">
+                <img src="single_vs_double_sub_injected.png" width="300">
+                <div class="blurb">
+                    <h3>Research Project: Direct Detection of Exomoons</h3>
+                    <p> 
+                        I began this project in 2025, working closely with Drs. Mary Anne Limbach <br>
+                        and Rachel Bowens-Rubin of the University of Michigan. <br>
+                        To date, there have been no confirmed detections of exomoons. Numerous <br>
+                        methods have been proposed to solve this. We were inspired by the efforts <br>
+                        of Lazzoni et al. (2020) to directly detect giant exomoons through <br>
+                        VLT/SPHERE direct imaging data. Our central questions were as follows: <br>
+                        using JWST/MIRI direct imaging data of the super-Jupiter Epsilon Indi A b, <br>
+                        can we detect an exomoon/binary planet in this regime? If not, what <br>
+                        constraints can we put on the presence of such companions? 
+                    </p>
+                    <p> 
+                        We ultimately settled on using the proven technique of double-PSF fitting. <br>
+                        This was necessary because our data were taken at long wavelengths, <br>
+                        meaning most companions would lie within the diffraction limit. On the left, I <br>
+                        have injected a fake companion at a contrast of 0.2 relative to the real <br>
+                        planet. The fitted location of the planet and companion are shown with a <br>
+                        black X and brown circle, respectively. In this case, we can clearly see <br>
+                        the superiority of a double-PSF fit in the residual column. Although no <br>
+                        strong exomoon candidates were found, we were able to recover Jupiter-mass <br>
+                        companions at wide separations and larger companions down to ~0.52 AU. I've <br>
+                        submitted my findings in a first-author paper to The Astronomical Journal!
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2 class="section-header">Contact</h2>
+
+            <hr>
+
+            <div class="contact">
+                <p>
+                    I do not maintain active public profiles on social media sites. <br>
+                    The best way to reach me is via email! My address is <span class="emphasis"> matgarza at mit dot edu</span>. <br>
+                    Outside of weekends and holidays, I will try my best to reply within 24&#8211;48 hours. <br>
+                    I look forward to getting in touch!
+                </p>
+
+            </div>
+
+            <hr id="last-bar">
+
+        </main>
+        <footer>
+            © 2026 Matson Garza
+        </footer>
+    </body>
+</html>
